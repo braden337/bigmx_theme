@@ -1,5 +1,7 @@
 ##My wordpress theme development setup
 
+The `grunt-cli` tool is required.
+
 `$ npm install`
 
 `$ grunt flow`
