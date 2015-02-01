@@ -6,7 +6,7 @@ After Node/npm is installed on your system run:
 
 `$ npm install`
 
-and
+and then:
 
 `$ grunt flow`
 
