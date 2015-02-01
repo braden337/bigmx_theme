@@ -10,5 +10,4 @@ style.css
 # Can also ignore all directories and files in a directory.
 node_modules/**/*
 .sass-cache/**/*
-sass/**/*
 dist/**/*
