@@ -1,7 +1,6 @@
 # Can ignore specific files
 .DS_Store
 .env
-style.css
 
 # Use wildcards as well
 *~
@@ -9,5 +8,6 @@ style.css
 
 # Can also ignore all directories and files in a directory.
 node_modules/**/*
+bower_components/**/*
 .sass-cache/**/*
 dist/**/*
