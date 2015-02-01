@@ -1,6 +1,7 @@
 # Can ignore specific files
 .DS_Store
 .env
+style.css
 
 # Use wildcards as well
 *~
