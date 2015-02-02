@@ -7,7 +7,7 @@ $susy: (
   gutter-position: split,
   container: auto,
   container-position: center,
-  columns: 12,
+  columns: 18,
   gutters: 1/2,
   column-width: false,
   global-box-sizing: border-box,
@@ -28,4 +28,4 @@ $susy: (
 );
 
 /* Makes border-box properties */
-// @include border-box-sizing;
+@include border-box-sizing;

@@ -1,0 +1,18 @@
+#site-header {
+  background-color: $blue;
+  // display: inline-block;
+  padding: 4em 2.5em 100em 2.5em;
+  @include span(4 of 18 inside);
+  img {
+    max-width: 100%;
+  }
+}
+
+#site-tagline {
+  color: $green;
+  font-family: 'Source Sans Pro';
+  text-align: right;
+  font-size: 1.25em;
+  font-weight: 200;
+  // font-style: italic;
+}
