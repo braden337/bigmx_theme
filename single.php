@@ -35,6 +35,10 @@
                     <?php the_time('g:i a'); ?>
                   </div>
 
+                  <div class="content">
+                    <?php the_content(); ?>
+                  </div>
+
                 </a>
 
               </li>

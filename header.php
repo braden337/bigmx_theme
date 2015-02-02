@@ -53,7 +53,7 @@
           <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="big mx logo">
           <div id="site-tagline">Stories that move you</div>
           
-          <?php wp_nav_menu(''); ?>
+          <?php wp_nav_menu( 'Header Menu' ); ?>
 
 
 
