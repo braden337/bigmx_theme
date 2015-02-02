@@ -18,4 +18,4 @@ After this you will be able to run the command `fly production` this project wil
 
 *lol* cool
 
-diale in.
+dialed in.
