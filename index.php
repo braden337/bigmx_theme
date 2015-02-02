@@ -25,16 +25,16 @@
 
         <!-- Add your site or application content here -->
         <div class="site-content">
-        <?php 
+        <?php
 
         if(have_posts()) :
-          
+
           while (have_posts()) : the_post();
-        
+
         ?>
 
           <ul class="posts">
-            
+
               <li class="post no-max">
 
                 <a href="<?php the_permalink(); ?>" class="post-link post-header">
@@ -60,7 +60,7 @@
 
               </li>
 
-            
+
           </ul>
 
 
@@ -75,9 +75,9 @@
           endwhile;
 
         else :
-          
+
           echo '<p>No content found</p>';
-        
+
         endif;
         ?>
 
