@@ -50,7 +50,7 @@
 
 
         <div id="site-header">
-          <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="big mx logo">
+          <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="big mx logo"></a>
           <div id="site-tagline">Stories that move you</div>
           
           <?php wp_nav_menu( 'Header Menu' ); ?>

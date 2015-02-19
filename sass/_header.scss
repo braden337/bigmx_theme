@@ -9,10 +9,30 @@
 }
 
 #site-tagline {
-  color: $green;
-  font-family: 'Source Sans Pro';
+  color: darken(white, 5%);
+  font-family: 'Open Sans';
   text-align: right;
   font-size: 1.25em;
-  font-weight: 200;
-  // font-style: italic;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#site-header ul#menu-header {
+  margin-top: 1em;
+  li {
+    display: block;
+    text-align: center;
+    // background-color: red;
+    color: $green;
+    font-family: 'Open Sans';
+    font-size: 0.55em;
+    font-weight: 500;
+    // margin-top: 20px;
+    margin-bottom: .7em;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
