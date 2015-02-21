@@ -52,9 +52,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  
+
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('flow', ['compass', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('flow', ['compass', 'autoprefixer']);
 
 };
 
