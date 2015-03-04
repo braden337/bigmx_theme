@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+
   <?php wp_head(); ?>
 
 </head>
@@ -25,12 +25,12 @@
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <div id="wrapper">
+
   <div id="site-header">
     <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="big mx logo"></a>
-    <div id="site-tagline">Stories that move you</div>
-
+    <div id="tagline">Stories that move you</div>
     <?php wp_nav_menu( 'Header Menu' ); ?>
-
 
 
   </div>

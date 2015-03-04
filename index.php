@@ -14,17 +14,19 @@
     while (have_posts()) : the_post();
 
   ?>
+  
+  <div class="post">
+    <div class="postimg"><?php the_post_thumbnail( [56,56], $attr ); ?></div>
 
+
+  </div>
   <ul class="posts">
 
     <li class="post no-max">
 
-      <a href="<?php the_permalink(); ?>" class="post-link post-header">
-
         <div class="post-line">
-          <?php the_post_thumbnail( [56,56], $attr ); ?>
-          <!-- <span class="show-num">150</span> -->
-          <h2><?php the_title(); ?></h2>
+          
+          <h3><?php the_title(); ?></h3>
         </div>
 
         <div class="meta">
@@ -37,7 +39,6 @@
           <?php the_time('g:i a'); ?>
         </div>
 
-      </a>
 
     </li>
 

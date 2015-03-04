@@ -14,7 +14,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 $nice: rgba(61, 100, 91, 0.76);
 $blue: rgba(65, 105, 225, 1);
-$green: rgba(0, 205, 73, 1);
+//$green: rgba(0, 205, 73, 1);
+
+$green: #3F7CAC;
 
 
 
@@ -27,7 +29,7 @@ $susy: (
   gutter-position: split,
   container: auto,
   container-position: center,
-  columns: 18,
+  columns: 12,
   gutters: 0,
   column-width: false,
   global-box-sizing: border-box,
@@ -50,15 +52,6 @@ $susy: (
 /* Makes border-box properties */
 @include border-box-sizing;
 
-
-
-
-
-svg {
-  stroke: $blue;
-  fill: $blue;
-  line-height: inherit;
-}
 
 
 
@@ -106,8 +99,65 @@ svg {
 
 
 body {
-  @include container;
+  //@include container;
 }
+
+
+#wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+#menu-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  li {
+    background-color: red;
+    padding: 10px 50px;
+    &:hover {
+      background-color: $green;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,7 +169,7 @@ body {
   // background-color: $blue;
   // display: inline-block;
   // padding: 4em 2.5em 100em 2.5em;
-  @include span(4 of 18 inside);
+  //@include span(4 of 18 inside);
   img {
     // max-width: 100%;
   }
@@ -166,7 +216,7 @@ body {
 
 
 .site-content {
-  @include span(14 of 18 inside);
+  //@include span(14 of 18 inside);
 }
 
 
