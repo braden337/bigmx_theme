@@ -10,11 +10,217 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 @import "compass/reset";
-@import "grids";
-@import "setup";
-@import "layout";
-@import "header";
-@import "content";
-@import "footer";
+@import "bootstrap";
 
 $nice: rgba(61, 100, 91, 0.76);
+$blue: rgba(65, 105, 225, 1);
+$green: rgba(0, 205, 73, 1);
+
+
+
+@import 'susy';
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  container: auto,
+  container-position: center,
+  columns: 18,
+  gutters: 0,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+
+
+
+
+svg {
+  stroke: $blue;
+  fill: $blue;
+  line-height: inherit;
+}
+
+
+
+@mixin breakpoint($point) {
+  @if $point == rv {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == js {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == ac {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
+@mixin get-off-the-screen() {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+@mixin blacked() {
+  border: 1px dotted black;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+// Source Sans Pro
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic,600italic);
+// Source Code Pro
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700);
+// Open Sans
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
+
+
+
+
+
+
+
+body {
+  @include container;
+}
+
+
+
+
+
+
+
+#site-header {
+  // background-color: $blue;
+  // display: inline-block;
+  // padding: 4em 2.5em 100em 2.5em;
+  @include span(4 of 18 inside);
+  img {
+    // max-width: 100%;
+  }
+}
+
+#site-tagline {
+  // color: darken(white, 5%);
+  // font-family: 'Open Sans';
+  // text-align: right;
+  // font-size: 1.25em;
+  // font-weight: 300;
+  // font-style: italic;
+}
+
+#site-header ul#menu-header {
+  // margin-top: 1em;
+  li {
+    // display: block;
+    // text-align: center;
+    // background-color: red;
+    // color: $green;
+    // font-family: 'Open Sans';
+    // font-size: 0.55em;
+    // font-weight: 500;
+    // margin-top: 20px;
+    // margin-bottom: .7em;
+    a {
+      &:hover {
+        // text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.site-content {
+  @include span(14 of 18 inside);
+}
+
+
+.post {
+  // padding: 20px;
+  // border-top: 1px solid #ccc;
+  //margin-bottom: 10px;
+  &:last-child {
+    //margin-bottom: 0px;
+  }
+  &:hover {
+    // background-color: #F8F8F8;
+  }
+}
+
+.mejs-container{
+  max-width: 392px;
+  //width: 50% !important;
+}
+
+.meta {
+  // font-size: 12px;
+  // margin: 0.5em 0 1em 0;
+  // width: 100%;
+  // color: #999;
+  svg {
+    // display: inline-block;
+    // width: 1em;
+    // height: 1em;
+    // vertical-align: -1px;
+    // margin-right: 0;
+  }
+  time {
+    // margin-right: 0.5em;
+  }
+  a {
+    // color: inherit;
+    // font-weight: normal;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

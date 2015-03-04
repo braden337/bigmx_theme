@@ -1,3 +1,6 @@
+
+
+
 <?php get_header(); ?>
 
 
@@ -25,9 +28,8 @@
         </div>
 
         <div class="meta">
-          <svg>
-            <use xlink:href="#icon-calendar"></use>
-          </svg>
+          <!-- <div data-icon="ei-calendar" data-size="s"></div> -->
+          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
           <time datetime="<?php the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time>
           <svg>
             <use xlink:href="#icon-clock"></use>
@@ -41,12 +43,6 @@
 
 
   </ul>
-
-
-
-
-
-
 
 
   <?php
@@ -66,3 +62,26 @@
 
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

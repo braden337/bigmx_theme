@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         options: {
           cssDir: 'dist',
           sassDir: 'sass',
-          require: 'susy',
+          require: ['susy', 'bootstrap-sass'],
         },
       },
     }, //end compass
@@ -40,6 +40,7 @@ module.exports = function(grunt) {
 
       php: {
         files: ['*.php'],
+        tasks: [],
         options: {
           livereload: true,
         },
