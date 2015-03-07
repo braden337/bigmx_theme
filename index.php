@@ -6,7 +6,7 @@
 
 
 <!-- Add your site or application content here -->
-<div class="site-content">
+<main>
   <?php
 
   if(have_posts()) :
@@ -15,35 +15,12 @@
 
   ?>
   
-  <div class="post">
-    <div class="postimg"><?php the_post_thumbnail( [56,56], $attr ); ?></div>
-
-
+  <div id="posts">
+    <div class="thumbnail"><?php the_post_thumbnail( [100,100], $attr ); ?></div>
+    <i class="fa fa-clock-o"></i>
+    <time datetime="<?php the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time>
+    lol
   </div>
-  <ul class="posts">
-
-    <li class="post no-max">
-
-        <div class="post-line">
-          
-          <h3><?php the_title(); ?></h3>
-        </div>
-
-        <div class="meta">
-          <!-- <div data-icon="ei-calendar" data-size="s"></div> -->
-          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-          <time datetime="<?php the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time>
-          <svg>
-            <use xlink:href="#icon-clock"></use>
-          </svg>
-          <?php the_time('g:i a'); ?>
-        </div>
-
-
-    </li>
-
-
-  </ul>
 
 
   <?php

@@ -8,14 +8,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php bloginfo( 'name' ); ?></title>
   <meta name="description" content="">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <?php wp_head(); ?>
 
@@ -27,13 +29,13 @@
 
   <div id="wrapper">
 
-  <div id="site-header">
-    <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="big mx logo"></a>
+  <header>
     <div id="tagline">Stories that move you</div>
+    <div id="topLogo">
+      <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/smalllogo.png" alt="big mx logo"></a>
+    </div>
     <?php wp_nav_menu( 'Header Menu' ); ?>
-
-
-  </div>
+  </header>
 
 
 
