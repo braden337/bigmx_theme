@@ -31,9 +31,11 @@
 
   <header>
     <div id="tagline">Stories that move you</div>
-    <div id="topLogo">
+    <div id="toplogo">
       <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/smalllogo.png" alt="big mx logo"></a>
     </div>
+    <div id="topbanner"><img src="<?php bloginfo('template_url'); ?>/assets/images/milestone.png"></div>
+
     <?php wp_nav_menu( 'Header Menu' ); ?>
   </header>
 
