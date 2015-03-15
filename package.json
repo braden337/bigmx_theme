@@ -12,7 +12,10 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-exec": "^0.4.6",
     "grunt-postcss": "^0.3.0",
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-ruby-sass": "^1.0.0-alpha.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -47,8 +47,6 @@ $susy: (
 @include border-box-sizing;
 
 
-
-
 @mixin breakpoint($point) {
   @if $point == rv {
     @media (max-width: 1600px) { @content; }
@@ -90,7 +88,7 @@ $susy: (
 
 
 body {
-
+  background-color: white;
 }
 
 #wrapper {
