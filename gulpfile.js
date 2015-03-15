@@ -11,9 +11,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('reload', function() {
-  // gulp.src('index.php')
-  // .pipe(livereload());
-  livereload.reload();
+  livereload.reload('php file changed so we');
 });
 
 
